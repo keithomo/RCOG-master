@@ -1,0 +1,10 @@
+CC = g++
+CFLAGS  = -g -Wall
+TARGET = rcog_piped
+
+all: $(TARGET)
+	$(CC) $(CFLAGS) -o $(TARGET) $(TARGET).cc
+
+clean:
+	$(RM) $(TARGET)
+
